@@ -8,7 +8,7 @@ import Detail from "./pages/Detail";
 
 const App = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <Routes>
         <Route path="/Header" element={<Header />} />
         <Route path="/" element={<Home />} />
