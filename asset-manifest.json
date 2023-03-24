@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/yeojeongyun.github.io/web/index.html/static/css/main.24890c11.css",
-    "main.js": "/yeojeongyun.github.io/web/index.html/static/js/main.89cad62d.js",
-    "static/js/787.3cd62dbe.chunk.js": "/yeojeongyun.github.io/web/index.html/static/js/787.3cd62dbe.chunk.js",
-    "index.html": "/yeojeongyun.github.io/web/index.html/index.html",
-    "main.24890c11.css.map": "/yeojeongyun.github.io/web/index.html/static/css/main.24890c11.css.map",
-    "main.89cad62d.js.map": "/yeojeongyun.github.io/web/index.html/static/js/main.89cad62d.js.map",
-    "787.3cd62dbe.chunk.js.map": "/yeojeongyun.github.io/web/index.html/static/js/787.3cd62dbe.chunk.js.map"
+    "main.css": "/yeojeongyun.github.io/web/static/css/main.24890c11.css",
+    "main.js": "/yeojeongyun.github.io/web/static/js/main.afc81071.js",
+    "static/js/787.3cd62dbe.chunk.js": "/yeojeongyun.github.io/web/static/js/787.3cd62dbe.chunk.js",
+    "index.html": "/yeojeongyun.github.io/web/index.html",
+    "main.24890c11.css.map": "/yeojeongyun.github.io/web/static/css/main.24890c11.css.map",
+    "main.afc81071.js.map": "/yeojeongyun.github.io/web/static/js/main.afc81071.js.map",
+    "787.3cd62dbe.chunk.js.map": "/yeojeongyun.github.io/web/static/js/787.3cd62dbe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24890c11.css",
-    "static/js/main.89cad62d.js"
+    "static/js/main.afc81071.js"
   ]
 }
