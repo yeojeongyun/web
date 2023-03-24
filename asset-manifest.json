@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/yeojeongyun.github.io/web/static/css/main.24890c11.css",
-    "main.js": "/yeojeongyun.github.io/web/static/js/main.afc81071.js",
+    "main.js": "/yeojeongyun.github.io/web/static/js/main.5c246e56.js",
     "static/js/787.3cd62dbe.chunk.js": "/yeojeongyun.github.io/web/static/js/787.3cd62dbe.chunk.js",
     "index.html": "/yeojeongyun.github.io/web/index.html",
     "main.24890c11.css.map": "/yeojeongyun.github.io/web/static/css/main.24890c11.css.map",
-    "main.afc81071.js.map": "/yeojeongyun.github.io/web/static/js/main.afc81071.js.map",
+    "main.5c246e56.js.map": "/yeojeongyun.github.io/web/static/js/main.5c246e56.js.map",
     "787.3cd62dbe.chunk.js.map": "/yeojeongyun.github.io/web/static/js/787.3cd62dbe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24890c11.css",
-    "static/js/main.afc81071.js"
+    "static/js/main.5c246e56.js"
   ]
 }
