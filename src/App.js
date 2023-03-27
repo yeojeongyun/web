@@ -5,6 +5,9 @@ import About from "./pages/About";
 import Header from "./pages/Header";
 import Footer from "./pages/Footer";
 import Detail from "./pages/Detail";
+import Like from "./pages/Like";
+import Dislike from "./pages/Dislike";
+import Hobby from "./pages/Hobby";
 
 const App = () => {
   return (
@@ -15,6 +18,9 @@ const App = () => {
         <Route path="/Footer" element={<Footer />} />
         <Route path="/about" element={<About />} />
         <Route path="/Detail" element={<Detail />} />
+        <Route path="/Like" element={<Like />} />
+        <Route path="/Dislike" element={<Dislike />} />
+        <Route path="/Hobby" element={<Hobby />} />
       </Routes>
     </BrowserRouter>
   );

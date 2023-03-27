@@ -29,11 +29,7 @@ export default function About() {
       <Header />
       <br />
       <br />
-      <h2>목록</h2>{" "}
-      <button className="button_home" onClick={goHome}>
-        Home
-      </button>
-      <br />
+      <h2>목록</h2>
       <br />
       <table style={{ margin: "auto" }}>
         <thead>
