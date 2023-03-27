@@ -7,6 +7,7 @@ import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+
 export default () => {
   const movePage = useNavigate();
 
@@ -23,6 +24,20 @@ export default () => {
       slidesPerView={4}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
+      breakpoints={{
+        328: {
+          slidesPerView: 1,
+        },
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+      }}
     >
       <SwiperSlide>
         <br />
@@ -63,7 +78,12 @@ export default () => {
       </SwiperSlide>
       <SwiperSlide>
         <br />
-        <img src="img/cute.jpg" width="450" height="590" alt="" />
+        <img
+          src="https://github.com/YejinnKim/Joahaeng/blob/main/public/img/pic.jpg?raw=true"
+          width="450"
+          height="590"
+          alt=""
+        />
       </SwiperSlide>
       <SwiperSlide>
         <br />
