@@ -1,13 +1,13 @@
 //import React, { Component } from "react";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
+import "swiper/css/autoplay";
 export default () => {
   const movePage = useNavigate();
 
@@ -17,11 +17,12 @@ export default () => {
 
   return (
     <Swiper
-      modules={[Navigation, Pagination]}
+      modules={[Navigation, Pagination, Autoplay]}
       navigation
       pagination={{ clickable: true }}
       spaceBetween={50}
       slidesPerView={4}
+      autoplay={{ delay: 1800, disableOnInteraction: false }}
       onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
       breakpoints={{

@@ -1,4 +1,6 @@
 import "./Style.css";
+import React from "react";
+import { Link } from "react-scroll";
 
 export default function Header() {
   return (
@@ -19,13 +21,29 @@ export default function Header() {
             <a href="/web/Hobby">취미</a>
             <ul className="submenu">
               <li>
-                <a href="#">책</a>
+                <a href="/web/Hobby">책</a>
               </li>
               <li>
-                <a href="#">넷플릭스</a>
+                <Link
+                  to="section1"
+                  spy={true}
+                  smooth={true}
+                  duration={1200}
+                  offset={-150}
+                >
+                  넷플릭스
+                </Link>
               </li>
               <li>
-                <a href="#">기타</a>
+                <Link
+                  to="section2"
+                  spy={true}
+                  smooth={true}
+                  duration={1200}
+                  offset={-10}
+                >
+                  기타
+                </Link>
               </li>
             </ul>
           </li>
