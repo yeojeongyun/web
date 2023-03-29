@@ -1,8 +1,21 @@
 import "./Style.css";
 import React from "react";
 import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
+  const movePage = useNavigate();
+
+  function goLike() {
+    movePage("/Like");
+  }
+  function goDislike() {
+    movePage("/Dislike");
+  }
+  function goHobby() {
+    movePage("/Hobby");
+  }
+
   return (
     <div className="Header">
       <h1 style={{ fontSize: "40px" }}>
@@ -12,16 +25,22 @@ export default function Header() {
       <nav>
         <ul className="menu">
           <li>
-            <a href="/web/Like">선호</a>
+            <a href="/web/Like" onClick={goLike}>
+              선호
+            </a>
           </li>
           <li>
-            <a href="/web/Dislike">비선호</a>
+            <a href="/web/Dislike" onClick={goDislike}>
+              비선호
+            </a>
           </li>
           <li>
             <a href="/web/Hobby">취미</a>
             <ul className="submenu">
               <li>
-                <a href="/web/Hobby">책</a>
+                <a href="/Hobby" onClick={goHobby}>
+                  책
+                </a>
               </li>
               <li>
                 <Link
