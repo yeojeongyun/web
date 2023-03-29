@@ -25,7 +25,7 @@ export default function Header() {
       <nav>
         <ul className="menu">
           <li>
-            <a href="/web/Like" onClick={goLike}>
+            <a href="#" onClick={goLike}>
               선호
             </a>
           </li>
