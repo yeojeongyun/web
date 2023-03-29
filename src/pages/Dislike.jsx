@@ -12,6 +12,7 @@ export default function Like() {
     speed: 20,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
   };
@@ -59,6 +60,7 @@ export default function Like() {
           <br />
         </div>
       </Slider>
+      <br />
       <br />
       <br />
       <br />

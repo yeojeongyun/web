@@ -14,6 +14,7 @@ export default function Like() {
     speed: 25,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
   };
@@ -67,6 +68,7 @@ export default function Like() {
             }
             alt="향"
           />
+          <br />
           <br />
           <br />
           <br />
