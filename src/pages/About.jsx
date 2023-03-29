@@ -9,10 +9,6 @@ export default function About() {
   const [data, setData] = useState(null);
   const movePage = useNavigate();
 
-  function goHome() {
-    movePage("/");
-  }
-
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
