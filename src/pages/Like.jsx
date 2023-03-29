@@ -52,9 +52,7 @@ export default function Like() {
             alt="폼폼푸린"
           />
         </div>
-        <div>
-          <img src="img/like1.png" alt="스타벅스" />
-        </div>
+
         <div>
           <img src="img/like2.jpg" alt="집" />
         </div>
