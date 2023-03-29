@@ -30,15 +30,17 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <a href="/web/Dislike" onClick={goDislike}>
+            <a href="#" onClick={goDislike}>
               비선호
             </a>
           </li>
           <li>
-            <a href="/web/Hobby">취미</a>
+            <a href="#" onClick={goHobby}>
+              취미
+            </a>
             <ul className="submenu">
               <li>
-                <a href="/Hobby" onClick={goHobby}>
+                <a href="#" onClick={goHobby}>
                   책
                 </a>
               </li>
