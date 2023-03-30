@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import "./Style.css";
 
 export default function Home() {
@@ -13,9 +13,7 @@ export default function Home() {
   }
 
   function saveNote() {
-    // note 값을 어딘가에 저장하거나 처리하는 코드를 작성
     console.log("Note saved:", note);
-    goHome();
   }
 
   function handleNoteChange(event) {
@@ -24,9 +22,7 @@ export default function Home() {
 
   return (
     <div>
-      <Header />
       <h1 style={{ fontSize: "40px" }}>
-        <br />
         <center>설명</center> <br />
       </h1>
       <div className="container">
@@ -40,7 +36,6 @@ export default function Home() {
           Save
         </button>
       </div>
-      <Footer />
     </div>
   );
 }

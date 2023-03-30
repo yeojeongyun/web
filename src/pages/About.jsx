@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import React, { useEffect, useState } from "react";
 import "./Style.css";
 import axios from "axios";
@@ -9,9 +9,9 @@ export default function About() {
   const [data, setData] = useState(null);
   const movePage = useNavigate();
 
-  function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+  // function scrollToTop() {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // }
 
   useEffect(() => {
     axios
@@ -22,11 +22,7 @@ export default function About() {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <Header />
-      <br />
-      <br />
       <h2>목록</h2>
-      <br />
       <table style={{ margin: "auto" }}>
         <thead>
           <tr className="tr">
@@ -36,21 +32,16 @@ export default function About() {
           </tr>
         </thead>
         <tbody className="tbody">
-          <br />
           {data &&
             data.slice(0, 30).map((todo) => (
               <tr key={todo.id}>
                 <td className="td">{todo.id}</td>
                 <td className="td">{todo.title}</td>
-                <td className="td">{todo.completed ? "완료" : "미완료"}</td>
+                <td className="td">{todo.completed ? "O" : "X"}</td>
               </tr>
             ))}
         </tbody>
       </table>
-      <button className="Up" onClick={scrollToTop}>
-        Up
-      </button>
-      <Footer />
     </div>
   );
 }

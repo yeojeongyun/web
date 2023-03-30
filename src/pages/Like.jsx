@@ -1,6 +1,6 @@
 import "./Style.css";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -23,17 +23,10 @@ export default function Like() {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <Header />
-      <br />
-      <br />
       <h2>선호</h2>
-      <br />
-      <br />
-      <br />
+
       <Slider {...settings}>
         <div>
-          <br />
-          <br />
           <img
             src={
               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRelC__lky1uozTw1l0F3urYFzM2qKCpHtJsQ&usqp=CAU"
@@ -68,16 +61,8 @@ export default function Like() {
             }
             alt="향"
           />
-          <br />
-          <br />
-          <br />
-          <br />
         </div>
       </Slider>
-      <br />
-      <br />
-      <br />
-      <Footer />
     </div>
   );
 }

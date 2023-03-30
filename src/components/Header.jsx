@@ -1,4 +1,4 @@
-import "./Style.css";
+import "../pages/Style.css";
 import React from "react";
 import { Link } from "react-scroll";
 import { useNavigate } from "react-router-dom";
@@ -15,12 +15,15 @@ export default function Header() {
   function goHobby() {
     movePage("/Hobby");
   }
-
+  function goAbout() {
+    movePage("/about");
+  }
   return (
     <div className="Header">
       <h1 style={{ fontSize: "40px" }}>
-        <br />
-        <center>자기소개</center> <br />
+        <a href="/web" className="header_a">
+          <center style={{ padding: "45px" }}>자기소개</center> <br />
+        </a>
       </h1>
       <nav>
         <ul className="menu">
@@ -69,7 +72,9 @@ export default function Header() {
             </ul>
           </li>
           <li>
-            <a href="/web">Main</a>
+            <a href="#" onClick={goAbout}>
+              todo
+            </a>
           </li>
         </ul>
       </nav>
