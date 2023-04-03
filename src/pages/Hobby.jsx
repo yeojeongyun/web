@@ -75,32 +75,34 @@ export default function Hobby() {
           </Slider>
         ))}
       </Slider>
-
       <h3>책</h3>
-      <Slider {...settings} className="Slider">
-        {images2.map((images2, index) => (
-          <Slider key={index}>
-            <img
-              src={images2.src}
-              width={images2.width}
-              height={images2.height}
-            />
-          </Slider>
-        ))}
-      </Slider>
+      <div id="section1">
+        <Slider {...settings} className="Slider">
+          {images2.map((images2, index) => (
+            <Slider key={index}>
+              <img
+                src={images2.src}
+                width={images2.width}
+                height={images2.height}
+              />
+            </Slider>
+          ))}
+        </Slider>
+      </div>
       <h3>넷플릭스</h3>
-
-      <Slider {...settings} className="Slider">
-        {images3.map((images3, index) => (
-          <Slider key={index}>
-            <img
-              src={images3.src}
-              width={images3.width}
-              height={images3.height}
-            />
-          </Slider>
-        ))}
-      </Slider>
+      <div id="section2">
+        <Slider {...settings} className="Slider">
+          {images3.map((images3, index) => (
+            <Slider key={index}>
+              <img
+                src={images3.src}
+                width={images3.width}
+                height={images3.height}
+              />
+            </Slider>
+          ))}
+        </Slider>
+      </div>
       <h3>기타</h3>
     </div>
   );
