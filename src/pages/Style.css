@@ -1,6 +1,5 @@
 * {
   padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 /* Footer */
@@ -36,6 +35,9 @@
 .Up:hover {
   background-color: rgb(181, 180, 181);
 }
+.p_size {
+  margin: 10px;
+}
 
 /* Header */
 li {
@@ -48,7 +50,7 @@ a {
 .menu {
   width: auto;
   overflow: hidden;
-  margin: auto;
+  /* margin: auto; */
 }
 .menu > li {
   width: 25%; /*25*4=100%*/
@@ -78,6 +80,7 @@ a {
   line-height: 50px;
 }
 .Header {
+  margin-top: auto;
   background-color: #faebf8;
 }
 a:hover {
@@ -132,7 +135,6 @@ a:hover {
 .tr {
   background-color: #c5c1c1;
   font-size: 30px;
-  padding: 10px;
 }
 .tbody {
   font-size: 24px;
@@ -197,7 +199,9 @@ a:hover {
 }
 
 /* Like, Dislike, Hobby */
-.slick-slide img {
+.Slider {
   display: block;
   margin: auto;
+  width: 20% !important;
+  text-align: center;
 }

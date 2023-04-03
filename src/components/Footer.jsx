@@ -13,12 +13,9 @@ export default function Footer() {
         <button className="Up" onClick={scrollToTop}>
           Up
         </button>
-        공지사항
-        <br />
-        010-3952-1878
-        <br />
-        jyyeo@mobiliverse.com
-        <br />
+        <p className="p_size">공지사항</p>
+        <p className="p_size">010-3952-1878</p>
+        <p>jyyeo@mobiliverse.com</p>
       </div>
     </footer>
   );

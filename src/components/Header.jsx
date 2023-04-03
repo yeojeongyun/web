@@ -20,9 +20,11 @@ export default function Header() {
   }
   return (
     <div className="Header">
-      <h1 style={{ fontSize: "40px" }}>
+      <h1 style={({ fontSize: "40px" }, { margin: "10px" })}>
         <a href="/web" className="header_a">
-          <center style={{ padding: "45px" }}>자기소개</center> <br />
+          <p>
+            <center>자기소개</center>
+          </p>
         </a>
       </h1>
       <nav>

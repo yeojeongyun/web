@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -12,8 +12,16 @@ export default function Home() {
     movePage("/");
   }
 
+  useEffect(() => {
+    const savedNote = localStorage.getItem("note");
+    if (savedNote) {
+      setNote(savedNote);
+    }
+  }, []);
+
   function saveNote() {
     console.log("Note saved:", note);
+    localStorage.setItem("note", note); // note 값을 LocalStorage에 저장
   }
 
   function handleNoteChange(event) {
