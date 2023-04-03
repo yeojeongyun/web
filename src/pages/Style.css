@@ -2,9 +2,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /* Footer */
 .footer {
-  height: 230px;
+  height: 160px;
   margin-top: auto;
   background-color: #faebf8;
 }
@@ -50,14 +51,13 @@ a {
 .menu {
   width: auto;
   overflow: hidden;
-  /* margin: auto; */
 }
 .menu > li {
   width: 25%; /*25*4=100%*/
-  height: 50px;
+  height: 85px;
   float: left;
   text-align: center;
-  line-height: 30px;
+  line-height: 75px;
 }
 .menu a {
   color: #000000;
@@ -80,7 +80,7 @@ a {
   line-height: 50px;
 }
 .Header {
-  margin-top: auto;
+  margin-top: 45px;
   background-color: #faebf8;
 }
 a:hover {
@@ -92,40 +92,11 @@ a:hover {
 .header_a:hover {
   color: #000;
 }
+
 /* Myslide */
 .SwiperSlide {
   z-index: -30;
   position: fixed;
-}
-
-/* Home */
-.button-wrapper {
-  text-align: center; /* 버튼을 중앙에 정렬 */
-}
-.button {
-  z-index: 3;
-  position: absolute;
-  top: 25%;
-  right: 4%;
-  background-color: #c5c1c1;
-  border: none;
-  color: #000;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: block; /* 블록 레벨 요소로 만들어줌 */
-  font-size: 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-@media screen and (max-width: 768px) {
-  .button {
-    margin-left: 10px;
-  }
-}
-.button:hover {
-  background-color: #faebf8;
 }
 
 /* About */
@@ -204,4 +175,8 @@ a:hover {
   margin: auto;
   width: 20% !important;
   text-align: center;
+}
+.slick-dots {
+  bottom: 50px;
+  margin-top: 20px;
 }

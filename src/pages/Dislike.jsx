@@ -23,29 +23,27 @@ export default function Like() {
   const images = [
     {
       src: "img/Dislike1.jpg ",
-      width: "20%",
-      height: "180",
+
+      height: "230",
     },
     {
       src: "img/Dislike2.jpg ",
-      width: "20%",
-      height: "180",
+      height: "230",
     },
     {
       src: " img/Dislike3.jpg",
-      width: "10",
-      height: "180",
+
+      height: "230",
     },
     {
       src: "img/Dislike4.jpg ",
-      width: "10",
-      height: "180",
+
+      height: "230",
     },
   ];
   return (
     <div style={{ textAlign: "center" }}>
       <h2>비선호</h2>
-
       <Slider {...settings} className="Slider">
         {images.map((image, index) => (
           <Slider key={index}>

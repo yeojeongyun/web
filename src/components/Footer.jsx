@@ -14,7 +14,7 @@ export default function Footer() {
           Up
         </button>
         <p className="p_size">공지사항</p>
-        <p className="p_size">010-3952-1878</p>
+        <p className="p_size">010-1111-1111</p>
         <p>jyyeo@mobiliverse.com</p>
       </div>
     </footer>

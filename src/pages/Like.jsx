@@ -25,31 +25,25 @@ export default function Like() {
     {
       src: "img/like1.jpg",
       alt: "홈런볼",
-      width: "120",
       height: "180",
     },
     {
       src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQruLj4KFfuBihtph0awZ-Avnj75SaX9Pl1Tw&usqp=CAU",
       alt: "붕어빵",
-      width: "120",
       height: "180",
     },
     {
       src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3aT93aik-UDsC4Sw_YQKNHcgjAykqFENuqA&usqp=CAU",
       alt: "폼폼푸린",
-      width: "120",
-      height: "180",
     },
     {
       src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQTLnh9kzOq6ZNUhF0Kuh4LKMojs5hgcuUeg&usqp=CAU",
       alt: "향",
-      width: "120",
-      height: "180",
+      height: "230",
     },
     {
       src: "img/like2.jpg",
       alt: "집",
-      width: "120",
       height: "180",
     },
   ];
@@ -61,7 +55,7 @@ export default function Like() {
       <Slider {...settings} className="Slider">
         {images.map((image, index) => (
           <Slider key={index}>
-            <img src={image.src} width={image.width} height={image.height} />
+            <img src={image.src} height={image.height} />
           </Slider>
         ))}
       </Slider>
