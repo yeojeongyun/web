@@ -10,6 +10,10 @@ export default function Home() {
   return (
     <div>
       <Myslide />
+      <label className="input-file" for="input-file">
+        업로드
+      </label>
+      <input type="file" id="input-file" style={{ display: "none" }} />
     </div>
   );
 }

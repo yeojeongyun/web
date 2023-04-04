@@ -5,7 +5,7 @@
 
 /* Footer */
 .footer {
-  height: 160px;
+  height: 200px;
   margin-top: auto;
   background-color: #faebf8;
 }
@@ -178,4 +178,25 @@ a:hover {
 }
 .slick-dots {
   margin-bottom: 20px;
+}
+
+/* home */
+.input-file {
+  position: absolute;
+  right: 22%;
+  background-color: #c5c1c1;
+  border: none;
+  color: #000;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.input-file:hover {
+  background-color: rgb(181, 180, 181);
 }
