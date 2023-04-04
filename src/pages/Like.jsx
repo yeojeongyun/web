@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
+import styled from "styled-components";
 
 export default function Like() {
   const settings = {
@@ -20,7 +21,14 @@ export default function Like() {
   };
   const [data, setData] = useState(null);
   const movePage = useNavigate();
+  const StyledSlider = styled(Slider)`
+    padding-bottom: 30px;
 
+    .slick-dots {
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+  `;
   const images = [
     {
       src: "img/like1.jpg",
@@ -51,14 +59,13 @@ export default function Like() {
   return (
     <div style={{ textAlign: "center" }}>
       <h2>선호</h2>
-
-      <Slider {...settings} className="Slider">
+      <StyledSlider {...settings} className="Slider">
         {images.map((image, index) => (
           <Slider key={index}>
             <img src={image.src} height={image.height} />
           </Slider>
         ))}
-      </Slider>
+      </StyledSlider>
     </div>
   );
 }

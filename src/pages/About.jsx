@@ -7,11 +7,16 @@ import axios from "axios";
 
 export default function About() {
   const [data, setData] = useState(null);
-  const movePage = useNavigate();
+  const [searchQuery, setSearchQuery] = useState("");
 
-  // function scrollToTop() {
-  //   window.scrollTo({ top: 0, behavior: "smooth" });
-  // }
+  const elementStyle = {
+    border: "solid",
+    borderRadius: "10px",
+    position: "relative",
+    left: "25vh",
+    height: "3vh",
+    width: "20vh",
+  };
 
   useEffect(() => {
     axios
@@ -20,9 +25,26 @@ export default function About() {
       .catch((error) => console.log(error));
   }, []);
 
+  const searchSpace = (event) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const filteredData =
+    data &&
+    data.filter((todo) => {
+      return todo.id.toString().indexOf(searchQuery) !== -1;
+    });
+
   return (
     <div style={{ textAlign: "center" }}>
       <h2>목록</h2>
+      <input
+        type="text"
+        placeholder="Enter number to be searched"
+        style={elementStyle}
+        onChange={searchSpace}
+      />
+      <button type="button" onC />
       <table style={{ margin: "auto" }}>
         <thead>
           <tr className="tr">
@@ -32,8 +54,8 @@ export default function About() {
           </tr>
         </thead>
         <tbody className="tbody">
-          {data &&
-            data.slice(0, 30).map((todo) => (
+          {filteredData &&
+            filteredData.slice(0, 30).map((todo) => (
               <tr key={todo.id}>
                 <td className="td">{todo.id}</td>
                 <td className="td">{todo.title}</td>

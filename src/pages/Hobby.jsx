@@ -75,9 +75,7 @@ export default function Hobby() {
           </Slider>
         ))}
       </Slider>
-      <p>
-        <h3>책</h3>
-      </p>
+      <h3>책</h3>
       <div id="section1">
         <Slider {...settings} className="Slider">
           {images2.map((images2, index) => (
@@ -91,9 +89,7 @@ export default function Hobby() {
           ))}
         </Slider>
       </div>
-      <p>
-        <h3>넷플릭스</h3>
-      </p>
+      <h3>넷플릭스</h3>
       <div id="section2">
         <Slider {...settings} className="Slider">
           {images3.map((images3, index) => (
@@ -107,9 +103,7 @@ export default function Hobby() {
           ))}
         </Slider>
       </div>
-      <p>
-        <h3>기타</h3>
-      </p>
+      <h3>기타</h3>
     </div>
   );
 }
